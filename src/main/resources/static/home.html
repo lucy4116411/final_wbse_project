@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>首頁</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="/js/session.js"></script>
+    <script src="/js/home.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQjSIjDQDSbBGsxQisJ4Z7TLyCINEXKe4&callback=initMap"></script>
+    <link href="../../css/index-css.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header clearfix my-4">
+        <nav>
+            <ul class="nav nav-pills float-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="user.html">個人資訊</a>
+                </li>
+                <li class="nav-item" id="user" style="display: none">
+                    <a class="nav-link" href="reply.html">書審資料</a>
+                </li>
+                <li class="nav-item" id="admin" style="display: none">
+                    <a class="nav-link" href="admin.html">管理</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="user-hello" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/api/logout">登出</a>
+                </li>
+            </ul>
+        </nav>
+        <h3 class="text-muted"> NKDA 報名系統</h3>
+    </div>
+    <div class="row marketing">
+        <div class="col-lg-6">
+
+        </div>
+
+        <div class="col-lg-6">
+
+        </div>
+    </div>
+    <div id="app" class="container">
+        <div class="row">
+            <div class="col">
+                <div id="map" class="embed-responsive embed-responsive-16by9"></div>
+            </div>
+        </div>
+    </div>
+    <!--<div data-component-maps="" style="min-height:240px;min-width:240px;position:relative"><iframe frameborder="0" src="https://maps.google.com/maps?&amp;z=1&amp;t=q&amp;output=embed" width="100" height="100" style="width:100%;height:100%;position:absolute;left:0px;pointer-events:none"></iframe></div><footer class="footer"> -->
+
+
+</div> <!-- /container -->
+
+
+</body>
+</html>

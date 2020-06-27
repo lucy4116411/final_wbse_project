@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>管理報名者</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="/js/session.js"></script>
+    <script src="/js/admin.js"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header clearfix my-4">
+        <nav>
+            <ul class="nav nav-pills float-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="user.html">個人資訊</a>
+                </li>
+                <li class="nav-item" id="user" style="display: none">
+                    <a class="nav-link" href="reply.html">書審資料</a>
+                </li>
+                <li class="nav-item" id="admin" style="display: none">
+                    <a class="nav-link" href="admin.html">管理</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="user-hello" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/api/logout">登出</a>
+                </li>
+            </ul>
+        </nav>
+        <h3 class="text-muted"> NKDA 報名系統</h3>
+    </div>
+    <div class="jumbotron" id="user-container">
+        <div class="card my-2" id="user-userName">
+            <div class="card-header">
+                游傑如
+            </div>
+            <div class="card-body">
+                <table>
+                    <tbody>
+                    <tr>
+                        <th>學校:</th>
+                        <th>國立臺灣海洋大學</th>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron" id="reply-container" style="display: none">
+        <div class="card my-2">
+            <div class="card-header" id="q0">
+                Q1
+            </div>
+            <div class="card-body" id="a0">
+                A1
+            </div>
+        </div>
+        <div class="card my-2">
+            <div class="card-header" id="q1">
+                Q2
+            </div>
+            <div class="card-body" id="a1">
+                A2
+            </div>
+        </div>
+        <div class="card my-2">
+            <div class="card-header" id="q2">
+                Q3
+            </div>
+            <div class="card-body" id="a2">
+                A3
+            </div>
+        </div>
+        <div class="card my-2">
+            <div class="card-header" id="q3">
+                Q4
+            </div>
+            <div class="card-body" id="a3">
+                A4
+            </div>
+        </div>
+        <div class="card my-2">
+            <div class="card-header" id="q4">
+                Q5
+            </div>
+            <div class="card-body" id="a4">
+                A5
+            </div>
+        </div>
+    </div>
+</body>
+</html>
